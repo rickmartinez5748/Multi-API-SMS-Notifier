@@ -1,10 +1,6 @@
 # Themed SMS Sender – Flask Web App
 
-This is a fun Flask web application that simulates sending SMS messages by randomly selecting content from one of three themed modules:
-
-- A greeting from a real astronaut in space  
-- A message from a fictional Harry Potter character  
-- The current weather in Sudbury, Canada  
+This web app uses Flask to combine data from three different APIs into a custom notification message, which is then sent via Twilio SMS. I also created a simple front-end interface to trigger messages with a single click. This project was designed to demonstrate how various services can work together to automate updates and alerts. It showcases integration skills and practical automation using REST APIs.
 
 ## How It Works
 
