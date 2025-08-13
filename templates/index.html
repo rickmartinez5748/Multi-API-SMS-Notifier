@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Send SMS</title>
+</head>
+<body>
+    <h1>SMS Sender From Twilio</h1>
+    
+    <!--This creates the button that will send the message-->
+    <form action="/sms" method="post">
+        <button type="submit">Send Message</button>
+    </form>
+
+    <!--Receiving message from Flask through Jinja-->
+    {% with messages = get_flashed_messages() %}
+      {% if messages %}
+          {% for message in messages %}
+            <p style="color: green;">{{ message }}</p>
+          {% endfor %}
+      {% endif %}
+    {% endwith %}
+
+</body>
+</html>
